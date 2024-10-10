@@ -1,0 +1,85 @@
+body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px; /* Spasi di antara kolom */
+}
+
+.column {
+    flex: 1; /* Membuat kolom fleksibel */
+    margin: 0 10px; /* Margin untuk kolom */
+    padding: 10px;
+    background-color: #f9f9f9; /* Warna latar belakang kolom */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk kolom */
+    min-width: 300px; /* Minimum lebar kolom */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.box {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#descRumus, #rumus {
+    margin-top: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0d1117;
+        color: rgb(123, 167, 150);
+    }
+    textarea, select, input {
+        background-color: #1e1e1e;
+        color: white;
+        border: 1px solid #444;
+    }
+}
